@@ -2,30 +2,33 @@ const { Schema, model } = require("mongoose");
 
 const habitSchema = new Schema(
   {
-    title:{
-      type:String,
-      required: [true, 'title is required']
+    title: {
+      type: String,
+      uppercase: true,
+      required: [true, "title is required"],
     },
-    description:{
-      type:String,
-      required: [true, 'description is required']
+    description: {
+      type: String,
+      minlength: [40, "add at least 40 of description"],
+      required: [true, "description is required"],
     },
-    reason:{
-      type:String,
-      required:[true,'a reason is required']
+    reason: {
+      type: String,
+      required: [true, "please describe a reason to do it"],
     },
-    created:{
-      type:Date,
-      default:Date.now
+    created: {
+      type: Date,
+      default: Date.now,
     },
-    author:{
-      type: Schema.Types.ObjectId, ref:'User'
-    }
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
-)
+);
 
-const Habit = model('Habit', habitSchema)
-module.exports = Habit
+const Habit = model("Habit", habitSchema);
+module.exports = Habit;
