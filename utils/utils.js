@@ -15,7 +15,7 @@ exports.createJWT = (user) => {
         role: user.role,
       },
       process.env.SECRET,
-      { expiresIn: "24" }
+      { expiresIn: "24h" }
     )
     .split(".");
 };
