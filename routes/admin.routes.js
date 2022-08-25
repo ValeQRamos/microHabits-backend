@@ -6,6 +6,6 @@ const {allUsers} = require('../controllers/admin.controller')
 router.get('/users',verifyToken, checkRole(['Admin']), allUsers)
 
 // Upgrade a user to Admin
-router.get('/:id/edit-role',)
+
 
 module.exports = router;
