@@ -1,6 +1,5 @@
 const router = require("express").Router();
-const {verifyToken} = require('../middlewares/index')
-
+const {verifyToken , checkRole} = require('../middlewares/index')
 const {
   allHabits,
   addingHabit,
@@ -8,11 +7,13 @@ const {
   deleteHabit
 }  = require('../controllers/habit.controller')
 
+// read all habits
 router.get('/allhabits',verifyToken, allHabits)
+// create habit
+router.post('/addHabit', verifyToken , checkRole(['Admin']) ,addingHabit)
+// update habit
+router.patch('/edit-habit/:id', verifyToken , checkRole(['Admin']) ,updateHabit)
+// delete habit
+router.delete('/delete-habit/:id', verifyToken, checkRole(['Admin']) , deleteHabit)
 
-router.post('/addHabit', verifyToken ,addingHabit)
-
-router.patch('/edit-habit/:id', verifyToken ,updateHabit)
-
-router.delete('/delete-habit/:id', verifyToken, deleteHabit)
 module.exports = router;
