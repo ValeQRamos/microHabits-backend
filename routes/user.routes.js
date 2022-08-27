@@ -11,16 +11,16 @@ const {
 // middlewares
 const { verifyToken } = require("../middlewares/index");
 
-// Read user route
+// read user route
 router.get("/profile", verifyToken, getLoggedUser);
 
-// Read other user route
+// read other user route
 router.get('/:id/profile',verifyToken, getUserById)
 
-// Update user route
+// update user route
 router.patch('/edit-profile',verifyToken, editProfile)
 
-// Delete user route
+// delete user route
 router.delete('/delete-profile', verifyToken , deleteProfile)
 
 module.exports = router;
