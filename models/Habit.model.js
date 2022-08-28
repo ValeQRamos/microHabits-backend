@@ -9,7 +9,7 @@ const habitSchema = new Schema(
     },
     description: {
       type: String,
-      minlength: [40, "add at least 40 of description"],
+      minLength: [40, "add at least 40 of description"],
       required: [true, "description is required"],
     },
     reason: {
@@ -21,8 +21,10 @@ const habitSchema = new Schema(
       default: Date.now,
     },
     author: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
+      type: String,
+      default: "Anonymous",
+      // type: Schema.Types.ObjectId,
+      // ref: "User",
     },
   },
   {

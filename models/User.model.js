@@ -6,7 +6,7 @@ const userSchema = new Schema(
       type: String,
       unique: [true, "username already exists. please choose another username"],
       required: [true, "username is required"],
-      minlength: 1,
+      minLength: 1,
     },
     password: {
       type: String,
@@ -25,12 +25,12 @@ const userSchema = new Schema(
     firstName: {
       type: String,
       required: [true, "first name is a required field"],
-      minlength: 1,
+      minLength: 1,
     },
     lastName: {
       type: String,
       required: [true, "last name is a required field"],
-      minlength: 1,
+      minLength: 1,
     },
     avatarUrl: {
       type: String,
