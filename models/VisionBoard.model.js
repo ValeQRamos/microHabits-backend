@@ -19,8 +19,8 @@ const visionSchema = new Schema(
     },
     generalVision: {
       type: String,
-      required: [true, "add at least 100 characters describing your vision"],
-      minlength: [100, "add at least 100 characters describing your vision"],
+      required: [true, "add at least 50 characters describing your vision"],
+      minlength: [50, "add at least 50 characters describing your vision"],
     },
   },
   {

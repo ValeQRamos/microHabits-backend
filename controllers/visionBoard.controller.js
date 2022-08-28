@@ -11,10 +11,10 @@ exports.createBoard = async (req, res) => {
         errorMessage: "don't send empty fields",
       });
 
-    if (generalVision.length < 100)
+    if (generalVision.length < 50)
       return res.status(400).json({
         errorMessage:
-          "Please explain the vision board with at least 100 characters",
+          "Please explain the vision board with at least 50 characters",
       });
 
     const board = await VisionBoard.create({
@@ -81,10 +81,10 @@ exports.updateBoard = async (req, res) => {
         errorMessage: "don't send empty fields",
       });
 
-    if (generalVision.length < 100)
+    if (generalVision.length < 50)
       return res.status(400).json({
         errorMessage:
-          "Please explain the vision board with at least 100 characters",
+          "Please explain the vision board with at least 50 characters",
       });
 
     const updateBoard = await VisionBoard.findByIdAndUpdate(
