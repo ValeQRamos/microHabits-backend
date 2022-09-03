@@ -8,8 +8,10 @@ const { verifyToken } = require("../middlewares");
 
 // upload multiple images
 router.post("/uploads",verifyToken,uploadCloud.array("images", 3),uploadProcess);
+
 // upload single image
 router.post("/single", verifyToken, uploadCloud.single("image"), uploadProcess);
+
 // delete image
 router.delete("/deleteImages/:name", verifyToken ,deleteImage);
 

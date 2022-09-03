@@ -9,7 +9,7 @@ const habitSchema = new Schema(
     },
     description: {
       type: String,
-      minLength: [40, "add at least 40 of description"],
+      minLength: [40, "add at least 40 characters of description"],
       required: [true, "description is required"],
     },
     reason: {

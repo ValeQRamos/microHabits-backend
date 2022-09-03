@@ -32,7 +32,7 @@ exports.addingHabit = async (req, res) => {
 
     if (description.length < 40)
       return res.status(400).json({
-        errorMessage: "please add at least 40 characters",
+        errorMessage: "please add at least 40 characters of description",
       });
 
     const habit = await Habit.create({
