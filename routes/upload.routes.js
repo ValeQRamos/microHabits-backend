@@ -7,12 +7,12 @@ const uploadCloud = require("../helpers/cloudinary");
 const { verifyToken } = require("../middlewares");
 
 // upload multiple images
-router.post("/uploads",verifyToken,uploadCloud.array("images", 3),uploadProcess);
+router.post("/uploads", uploadCloud.array("images", 3), uploadProcess);
 
 // upload single image
-router.post("/single", verifyToken, uploadCloud.single("image"), uploadProcess);
+router.post("/single", uploadCloud.single("image"), uploadProcess);
 
 // delete image
-router.delete("/deleteImages/:name", verifyToken ,deleteImage);
+router.delete("/deleteImages/:name", verifyToken, deleteImage);
 
 module.exports = router;
