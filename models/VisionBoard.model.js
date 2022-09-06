@@ -21,6 +21,8 @@ const visionSchema = new Schema(
       type: String,
       required: [true, "add at least 50 characters describing your vision"],
       minlength: [50, "add at least 50 characters describing your vision"],
+      default:
+        "Use this space to motivate yourself, add photos related to your goals and remember to edit this text for something you like to be reading to inspire you :) ",
     },
   },
   {
