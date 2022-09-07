@@ -80,7 +80,7 @@ exports.signupProcess = async (req, res) => {
     }
     if (error.code === 11000) {
       return res.status(400).json({
-        errorMessage: "username need to be unique",
+        errorMessage: "username need to be unique!!",
       });
     }
     return res.status(500).json({ errorMessage: error.message });

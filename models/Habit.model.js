@@ -26,6 +26,10 @@ const habitSchema = new Schema(
       // type: Schema.Types.ObjectId,
       // ref: "User",
     },
+    timeSuggestion:{
+      type: String,
+      default: "Any Time"
+    }
   },
   {
     timestamps: true,
