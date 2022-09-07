@@ -13,6 +13,10 @@ exports.signupProcess = async (req, res) => {
     role,
     firstName,
     lastName,
+    visionOne,
+    visionTwo,
+    visionThree,
+    generalVision
   } = req.body;
 
   try {
@@ -55,6 +59,10 @@ exports.signupProcess = async (req, res) => {
       email,
       firstName,
       lastName,
+      visionOne,
+      visionTwo,
+      visionThree,
+      generalVision
     });
 
     const [header, payload, signature] = createJWT(user);
