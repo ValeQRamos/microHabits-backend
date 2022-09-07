@@ -37,6 +37,26 @@ const userSchema = new Schema(
       default:
         "https://res.cloudinary.com/duavnrhnp/image/upload/v1662223043/profile3_c72fpw.png",
     },
+    visionOne: {
+      type: String,
+      default:
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n1_ftfnua.jpg",
+    },
+    visionTwo: {
+      type: String,
+      default:
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n2_f95mff.jpg",
+    },
+    visionThree: {
+      type: String,
+      default:
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n3_bxjhsw.jpg",
+    },
+    generalVision: {
+      type: String,
+      default:
+        "Use this space to motivate yourself, add photos related to your goals and remember to edit this text for something you like to be reading to inspire you :) ",
+    },
   },
   {
     timestamps: true,
