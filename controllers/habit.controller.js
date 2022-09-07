@@ -22,7 +22,7 @@ exports.allHabits = async (req, res) => {
 
 // CREATE Habit
 exports.addingHabit = async (req, res) => {
-  const { title, description, reason } = req.body;
+  const { title, description, reason, timeSuggestion } = req.body;
   const { username } = req.user;
   try {
     if (!title.length || !description.length || !reason.length)
@@ -39,6 +39,7 @@ exports.addingHabit = async (req, res) => {
       title,
       description,
       reason,
+      timeSuggestion,
       author: username,
     });
 
