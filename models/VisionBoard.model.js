@@ -5,17 +5,17 @@ const visionSchema = new Schema(
     visionOne: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n1_ftfnua.jpg",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654664/5t_nn3gee.png",
     },
     visionTwo: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n2_f95mff.jpg",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654665/6t_gerhmy.png",
     },
     visionThree: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1661380460/n3_bxjhsw.jpg",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654664/7t_g6e7li.png",
     },
     generalVision: {
       type: String,
