@@ -40,17 +40,17 @@ const userSchema = new Schema(
     visionOne: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654664/5t_nn3gee.png",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/one_jkeeo9.png",
     },
     visionTwo: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654665/6t_gerhmy.png",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/two_cfvpg9.png",
     },
     visionThree: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662654664/7t_g6e7li.png",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/three_cbeylx.png",
     },
     generalVision: {
       type: String,
