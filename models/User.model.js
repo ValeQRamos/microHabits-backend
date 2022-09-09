@@ -55,7 +55,7 @@ const userSchema = new Schema(
     generalVision: {
       type: String,
       default:
-        "Use this space to motivate yourself, add photos related to your goals and remember to edit this text for something you like to be reading to inspire you :) ",
+        "Use this space to motivate yourself! Add photos related to your goals and remember to edit this text to something that you would like to read to inspire yourself :)",
     },
   },
   {
