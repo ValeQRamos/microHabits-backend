@@ -24,7 +24,7 @@ exports.uploadProcess = async (req, res) => {
     const urls = [];
     const files = req.files;
     if (!req.file) {
-      for (const file of files) {
+      for (const file in files) {
         const { path } = file;
         const newPath = await uploader(path);
 
