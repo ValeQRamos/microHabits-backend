@@ -42,20 +42,10 @@ const userSchema = new Schema(
       default:
         "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/one_jkeeo9.png",
     },
-    visionTwo: {
-      type: String,
-      default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/two_cfvpg9.png",
-    },
-    visionThree: {
-      type: String,
-      default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/three_cbeylx.png",
-    },
     generalVision: {
       type: String,
       default:
-        "Use this space to motivate yourself! Add photos related to your goals and remember to edit this text to something that you would like to read to inspire yourself :)",
+        "Use this space to motivate yourself! Add a photo related to your goals and remember to edit this text to something that you would like to read to inspire yourself :)",
     },
   },
   {
