@@ -14,8 +14,6 @@ exports.signupProcess = async (req, res) => {
     firstName,
     lastName,
     visionOne,
-    visionTwo,
-    visionThree,
     generalVision
   } = req.body;
 
@@ -60,8 +58,6 @@ exports.signupProcess = async (req, res) => {
       firstName,
       lastName,
       visionOne,
-      visionTwo,
-      visionThree,
       generalVision
     });
 
