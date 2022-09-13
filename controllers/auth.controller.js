@@ -67,14 +67,14 @@ exports.signupProcess = async (req, res) => {
       maxAge: 1000 * 60 * 30,
       httpOnly: true,
       sameSite: "strict",
-      secure: false,
+      secure: true,
     });
 
     res.cookie("signature", signature, {
       maxAge: 1000 * 60 * 30,
       httpOnly: true,
       sameSite: "strict",
-      secure: false,
+      secure: true,
     });
     const cleanUser = clearRes(user.toObject());
     res.status(201).json({ user: cleanUser });
@@ -119,14 +119,14 @@ exports.loginProcess = async (req, res) => {
       maxAge: 1000 * 60 * 30,
       httpOnly: true,
       sameSite: "strict",
-      secure: false,
+      secure: true,
     });
 
     res.cookie("signature", signature, {
       maxAge: 1000 * 60 * 30,
       httpOnly: true,
       sameSite: "strict",
-      secure: false,
+      secure: true,
     });
 
     const clearUser = clearRes(user.toObject());
