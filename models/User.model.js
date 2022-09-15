@@ -40,7 +40,7 @@ const userSchema = new Schema(
     visionOne: {
       type: String,
       default:
-        "https://res.cloudinary.com/duavnrhnp/image/upload/v1662666230/one_jkeeo9.png",
+        "https://res.cloudinary.com/duavnrhnp/image/upload/v1663199751/one_kqzfp1.png",
     },
     generalVision: {
       type: String,
