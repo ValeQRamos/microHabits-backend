@@ -31,10 +31,7 @@ module.exports = (app) => {
   app.use(
     cors({
       credentials: false,
-      origin: [
-        process.env.ORIGIN || "https://pebbles-vale.netlify.app",
-        "http://localhost:3000",
-      ],
+      origin: ["https://pebbles-vale.netlify.app", "http://localhost:3000"],
     })
   );
 
