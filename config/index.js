@@ -30,7 +30,7 @@ module.exports = (app) => {
   // controls a very specific header to pass headers from the frontend
   app.use(
     cors({
-      credentials: true,
+      credentials: false,
       origin: [
         process.env.ORIGIN || "https://pebbles-vale.netlify.app",
         "http://localhost:3000",
